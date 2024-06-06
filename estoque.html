@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estoque</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="fontawesome/css/all.min.css" />
+  <link rel="stylesheet" href="css/estoque.css">
+</head>
+
+<body>
+  <header class="homepage">
+    <h1>Estoque</h1>
+  </header>
+  <section id="adicionar-editar" class="estoque">
+    <h2>Adicionar Item</h2>
+    <form id="form-estoque">
+      <input type="text" id="nome-item" placeholder="Nome do Item" required>
+      <input type="number" id="quantidade-item" placeholder="Quantidade" required>
+      <button class="btn-adicionar" type="submit" id="btn-adicionar">Adicionar Item</button>
+    </form>
+  </section>
+
+  <section id="estoque" class="estoque">
+    <button class="export" onclick="exportarParaExcel()">Exportar para Excel</button>
+    <h2>Lista de Estoque</h2>
+    <hr>
+    <ul id="lista-estoque"></ul>
+  </section>
+  <footer class="footer-menu">
+    <div class="footer-itens">
+      <a href="Index.html"><i class="fa-solid fa-house"></i></a>
+    </div>
+    <div class="footer-itens">
+      <i class="fa-solid fa-people-group"></i>
+    </div>
+    <div class="footer-itens">
+      <i class="fa-solid fa-sack-dollar"></i>
+    </div>
+    <div class="footer-itens">
+      <i class="fa-solid fa-cart-flatbed"></i>
+    </div>
+    <div class="footer-itens">
+      <i class="fa-solid fa-cart-flatbed"></i>
+    </div>
+  </footer>
+
+  <script src="javascript/estoque.js"></script>
+  <!-- Inclua o script JS necessário para manipular o estoque -->
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Orçamentos</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="fontawesome/css/all.min.css" />
+  <link rel="stylesheet" href="css/orcamentos.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="homepage">
+    <h1>Orçamentos</h1>
+  </header>
+
+  <!-- Botão para abrir o pop-up de criar orçamento -->
+  <div class="criar-orcamento-botao">
+    <button id="abrir-popup-criar-orcamento">Criar Orçamento</button>
+  </div>
+
+  <!-- Pop-up para criar orçamento -->
+  <div id="popup-criar-orcamento" class="popup">
+    <div class="popup-conteudo">
+      <span class="fechar-popup" id="fechar-popup-criar-orcamento">&times;</span>
+      <h2>Criar Orçamento</h2>
+      <form id="orcamento-form">
+        <label for="cliente">Nome:</label>
+        <input type="text" id="cliente" name="cliente" required>
+        
+        <label for="data">Data:</label>
+        <input type="date" id="data" name="data" required>
+        
+        <div id="itens-orcamento">
+          <h3>Itens do Orçamento</h3>
+          <button type="button" onclick="adicionarItem()">Adicionar Item</button>
+        </div>
+        
+        <button type="button" onclick="salvarOrcamento()">Salvar Orçamento</button>
+      </form>
+    </div>
+  </div>
+
+  <section class="orcamentos">
+    <div class="orcamentos-lista">
+        <h2>Lista de Orçamentos</h2>
+        <input type="text" id="filtro-orcamentos" placeholder="Filtrar orçamentos...">
+        <ul id="lista-orcamentos"></ul>
+        <p id="mensagem-vazia" style="display: none;">Nenhum orçamento adicionado.</p>
+    </div>
+  </section>
+
+  <footer class="footer-menu">
+    <div class="footer-itens">
+      <a href="Index.html"><i class="fa-solid fa-house"></i></a>
+    </div>
+    <div class="footer-itens">
+      <i class="fa-solid fa-people-group"></i>
+    </div>
+    <div class="footer-itens">
+      <i class="fa-solid fa-sack-dollar"></i>
+    </div>
+    <div class="footer-itens">
+    </div>
+  </footer>
+
+  <script src="javascript/orcamento.js"></script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Financeiro</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet"/>
+  <link rel="stylesheet" href="fontawesome/css/all.min.css" />
+  <link rel="stylesheet" href="css/financeiro.css">
+</head>
+<body>
+  <header class="homepage">
+    <h1>Financeiro</h1>
+  </header>
+  
+  <section class="financeiro">
+    <div class="financeiro-itens">
+      <div class="financeiro-item">
+        <a href="javascript:void(0)" onclick="abrirCaixaPopup()"><i class="fa-solid fa-cash-register"></i></a>
+        <p>Gerenciar Caixa</p>
+      </div>
+      <div class="financeiro-item">
+        <a href="orcamentos.html"><i class="fa-solid fa-file-invoice-dollar"></i></a>
+        <p>Orçamentos</p>
+      </div>
+      <div class="financeiro-item">
+        <a href="#relatorios"><i class="fa-solid fa-chart-line"></i></a>
+        <p>Relatórios</p>
+      </div>
+      <div class="financeiro-item">
+        <a href="#despesas"><i class="fa-solid fa-receipt"></i></a>
+        <p>Despesas</p>
+      </div>
+    </div>
+  </section>
+
+  <div id="caixa-popup" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="fecharCaixaPopup()">&times;</span>
+      <h2>Caixa Semanal</h2>
+      <form id="caixa-form">
+        <label for="descricao">Descrição:</label>
+        <input type="text" id="descricao" name="descricao" required>
+        
+        <label for="valor">Valor:</label>
+        <input type="number" id="valor" name="valor" required>
+        
+        <label for="tipo">Tipo:</label>
+        <select id="tipo" name="tipo">
+          <option value="entrada">Entrada</option>
+          <option value="saida">Saída</option>
+        </select>
+        
+        <button type="button" onclick="adicionarCaixa()">Adicionar</button>
+      </form>
+      <h3>Resumo do Caixa</h3>
+      <div id="caixa-resumo">
+        <p><b>Total de Entradas:</b> R$ <span id="total-entradas">0.00</span></p>
+        <p><b>Total de Saídas:</b> R$ <span id="total-saidas">0.00</span></p>
+        <p id="total-box"><b>Total do Caixa:</b> R$ <span id="total-caixa">0.00</span></p>
+      </div>
+      <button type="button" onclick="limparCaixa()" class="clear-box">Limpar Caixa</button>
+      <h3>Transações</h3>
+      <ul id="lista-transacoes"></ul>
+    </div>
+  </div>
+
+  <footer class="footer-menu">
+    <div class="footer-itens">
+      <a href="Index.html"><i class="fa-solid fa-house"></i></a>
+    </div>
+    <div class="footer-itens">
+      <i class="fa-solid fa-people-group"></i>
+    </div>
+    <div class="footer-itens">
+      <i class="fa-solid fa-sack-dollar"></i>
+    </div>
+    <div class="footer-itens">
+      <i class="fa-solid fa-cart-flatbed"></i>
+    </div>
+    <div class="footer-itens">
+      <i class="fa-solid fa-cart-flatbed"></i>
+    </div>
+  </footer>
+  <script src="javascript/financeiro.js"></script>
+</body>
+</html>

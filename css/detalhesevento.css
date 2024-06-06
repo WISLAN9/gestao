@@ -1,0 +1,76 @@
+* {
+  font-family: "Poppins", sans-serif;
+  list-style-type: none;
+}
+#export{
+  width: 120px;
+  margin-left:auto;
+}
+.detalhes-evento {
+  margin-top: 20px;
+  width: 350px;
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+.detalhes-evento input {
+  width: 220px;
+  height: 40px;
+  margin: 10px 0px;
+  text-align: center;
+  background-color: #f1f3f5;
+  border-radius: 10px;
+  border: 2px solid black;
+}
+
+.detalhes-evento button {
+  margin-left: 10px;
+  width: 35px;
+  height: 35px;
+  background-color: var(--main-color);
+  color: var(--title-color);
+  font-size: 8px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.detalhes-evento i {
+  font-size: 12px;
+}
+
+.detalhes-evento li {
+  font-size: 15px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#pesquisar-convidado {
+  width: 300px;
+  border: 2px solid black;
+}
+
+#add-invite {
+  width: 70px;
+  height: 40px;
+}
+
+.convidado-info {
+  flex-grow: 1;
+  padding-left: 10px;
+}
+
+.input-button-group {
+  display: flex;
+  align-items: center;
+}
+/* Adicione este estilo ao seu arquivo CSS */
+.convidado-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+

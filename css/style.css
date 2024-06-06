@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+  margin: auto;
+  padding: 0;
+  border: 0;
+}
+body {
+  background-color: #f0f6f8;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  color: var(--main-color);
+  }
+
+:root {
+  --main-color: #003049;
+  --secondary-color: #d62828;
+  --title-color: #f1f7f9;
+  --icons-color: #003049;
+}
+
+.homepage {
+  background-color: var(--main-color);
+  width: 100%;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  color: var(--title-color);
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+.next-event {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.next-event p {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  font-style: normal;
+  text-align: center;
+  margin: 10px;
+}
+.event-iten {
+  margin: 0;
+  width: 350px;
+  display: flex;
+  font-size: 15px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  text-align: center;
+}
+.event-iten p {
+  font-size: 12px;
+}
+.event-iten > div {
+  padding: 5px;
+}
+#event-date-time {
+  width: 30%;
+  border-right: 1px solid #ddd;
+  display: flex;
+  flex-wrap: wrap;
+}
+#event-date-time p {
+  font-size: 15px;
+}
+#event-details {
+  width: 70%;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.card_itens {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  margin: 10px;
+  background-color: #ffffff;
+  width: 100px;
+  height: 120px;
+  align-items: center;
+  justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.card_itens p {
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  font-style: normal;
+}
+.card_itens p, i, a  {
+  margin: 0;
+  text-decoration: none;
+  color: var(--main-color);
+}
+
+.card_itens i {
+  color: var(--icons-color);
+  font-size: 25px;
+}
+#eventos-icon {
+  margin: 0;
+}
+.footer-menu {
+  background-color: var(--main-color);
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+}
+.footer-itens i {
+  font-size: 20px;
+  color: var(--title-color);
+}
