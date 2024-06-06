@@ -104,7 +104,9 @@ body {
 .card_itens p, i, a  {
   margin: 0;
   text-decoration: none;
-  color: var(--main-color);
+}
+.card_itens a {
+    color: var(--main-color);
 }
 
 .card_itens i {
